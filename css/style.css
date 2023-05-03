@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #FCC8D1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #FCC8D1;
+}
+
+footer {
+    background-color: #FCC8D1;
+}
+
+main {
+    background-color: #FFE3E3;
+}
+
+.header2 {
+    text-align: left;
+    text-decoration: underline;
+    letter-spacing: normal;
+    border-radius: 50px;
+}
+
+.titulo__principal{
+margin-left: 20px;
+}
+
+.bordes-redondeados {
+    position: relative;
+    border-radius: 300px;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.aside{
+    position: relative;
+    text-align: right;
+    margin-right: 40px;
+}
+
+.barra__inicio {
+    text-align: right;
+    color: black;
+    letter-spacing: 2px;
+    text-decoration: solid;
+}
+
+.inicio {
+    color: black;
+}
+
+.perros {
+    color: black;
+}
+
+.gatos {
+    color: black;
+}
+
+.accesorios {
+    color: black;
+}
+
+.nosotros {
+    color: black;
+}
+
+.contacto1 {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+.contacto2 {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.contacto3 {
+    font-size: 20px;
+    text-align: right;
+    margin-right: 80px;
+}
+
+.contacto5 {
+    font-size: 20px;
+    text-align: right;
+    margin-right: 80px;
+}
+
+
+
+
+.contenedor {
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    max-width: 1024px;
+    margin: 10px;
+    grid-template: auto auto auto/ repeat(1, 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.header {
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+        "header2 header3";
+}
+
+.header3{
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+    "aside"
+    "nav";
+}
+
+.main{
+    display: grid;
+    margin: 10px;
+    grid-template-areas: 
+    "titulo__main"
+    "section__marcas";
+}
+
+.main{
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+    "titulo__main"
+    "ventas";
+}
+
+.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
+    display: inline-block;
+    align-items: start;
+}
+
+.nosotros5{
+    display: inline-flexbox;
+}
+
+.section__marcas{
+    display: inline-block;
+}
+
+.purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.titulo__main{
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.footer{
+    display: grid;
+    margin: 10px;
+    grid-template-areas: 
+    "h2" 
+    ".contacto4";
+}
+
+.contacto4{
+    display: grid;
+    margin-top: 60px;
+    grid-template-areas:
+    "contacto1 contacto2"
+    "contacto5 contacto3";
+}
+
+.venta1{
+    display: flexbox;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media /*screen(min-width: 744px) {
+    contenedor{
+        grid-template-areas: 
+        ".logo .logo .aside .aside"
+        ".logo .logo .barra-inicio2 .barra-inicio2"
+        ".titulo__main .titulo__main .titulo__main .titulo__main"
+        ".purina .royal__canin .vittal__can .pedigree"
+        ".whiskas .eukanuba .catchow .dogchow"
+        ".footer2 .footer2 .footer2 .footer2"
+        ".contacto1 .contacto1 .contacto5 .contacto5"
+        ".contacto2 .contacto2 .contacto3 .contacto3";
+    }
+}
+
+
+/*.contenedor .header .header2 
+.logo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/*.contenedor .header 
+.aside{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/*.contenedor .header .section-nav .barra-inicio 
+.barra-inicio2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/*.contenedor .main .titulo-main{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/*.contenedor .main .section-marcas .purina{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/*.contenedor .main .section-marcas .royal-canin{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/*.contenedor .main .section-marcas .vittal-can{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/*.contenedor .main .section-marcas .pedigree{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+/*.contenedor .main .section-marcas .whiskas{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/*.contenedor .main .section-marcas .eukanuba{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/*.contenedor .main .section-marcas .catchow{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/*.contenedor .main .section-marcas .dogchow{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
+/*.contenedor .footer .footer2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+}
+
+/*.contenedor .footer .footer2 .contacto4 .contacto1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/*.contenedor .footer .footer2 .contacto4 .contacto5{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+/*.contenedor .footer .footer2 .contacto4 .contacto2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 8;
+}
+
+/*.contenedor .footer .footer2 .contacto4 .contacto3{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.contenedor .header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.contenedor .main{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.contenedor .footer{
+    grid-column-start: span 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.marcas1{
+    padding: 50px;
+    margin: 50px;
+}
