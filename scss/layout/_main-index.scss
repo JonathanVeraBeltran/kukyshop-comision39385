@@ -1,0 +1,35 @@
+main {
+    background-color: #FFE3E3;
+    justify-content: center;
+    width: 100%;
+}
+
+.main{
+    display: grid;
+    padding: 10px;
+    grid-template-areas: 
+    "titulo__main"
+    "section__marcas";
+}
+
+.section__marcas{
+    display: inline-block;
+}
+
+.titulo__main{
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dogchow{
+    width: 199px;
+    height: 85px;
+}

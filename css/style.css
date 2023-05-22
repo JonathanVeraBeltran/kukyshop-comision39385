@@ -1,281 +1,205 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-}
-
-html {
-    height: 100%;
-}
-
-body {
-    background-color: #FCC8D1;
-    display: flex;
-    flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-    background-color: #FCC8D1;
-}
-
-footer {
-    background-color: #FCC8D1;
-}
-
-main {
-    background-color: #FFE3E3;
-    justify-content: center;
-    width: 100%;
-}
-
-.header2 {
-    text-align: left;
-    text-decoration: underline;
-    letter-spacing: normal;
-    border-radius: 50px;
-}
-
-.titulo__principal{
-    margin-left: 20px;
-    
+  background-color: #FCC8D1;
+  min-height: 300px;
 }
 
 .bordes-redondeados {
-    position: relative;
-    border-radius: 300px;
-    width: 150px;
-    height: 150px;
-    margin-top: 20px;
-    margin-left: 20px;
+  position: relative;
+  border-radius: 300px;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
-.aside{
-    position: relative;
-    text-align: right;
-    margin-right: 40px;
+.navbar-brand {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.navbar-brand{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.barra__inicio {
-    text-align: right;
-    color: black;
-    letter-spacing: 2px;
-    text-decoration: solid;
-}
-
-.nav-link{
-    text-decoration: solid;
-    letter-spacing: 1px;
-}
-
-.inicio {
-    color: black;
-}
-
-.perros {
-    color: black;
-}
-
-.gatos {
-    color: black;
-}
-
-.accesorios {
-    color: black;
-}
-
-.nosotros {
-    color: black;
-}
-
-.contacto1 {
-    font-size: 40px;
-    margin-left: 30px;
-    margin-bottom: 40px;
-}
-
-.contacto2 {
-    font-size: 40px;
-    margin-left: 30px;
-}
-
-.contacto3 {
-    font-size: 40px;
-    text-align: right;
-    margin-right: 80px;
-    line-height: 10px;
-}
-
-.contacto5 {
-    font-size: 40px;
-    text-align: right;
-    margin-right: 80px;
-}
-
-.contenedor {
-    width: 90%;
-    display: grid;
-    gap: 10px;
-    max-width: 1024px;
-    margin: 10px;
-    grid-template: auto auto auto/ repeat(1, 1fr);
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
+.nav-link {
+  text-decoration: solid;
+  letter-spacing: 1px;
 }
 
 .header {
+  display: grid;
+  padding: 10px;
+  grid-template-areas: "header2 header3";
+}
+
+.nav-link:hover {
+  color: black;
+  font-size: 22px;
+}
+
+.dropdown-item {
+  margin: 0;
+  padding: 0;
+}
+
+.bordes-redondeados {
+  margin-bottom: 10px;
+}
+
+main {
+  background-color: #FFE3E3;
+  justify-content: center;
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  padding: 10px;
+  grid-template-areas: "titulo__main" "section__marcas";
+}
+
+.section__marcas {
+  display: inline-block;
+}
+
+.titulo__main {
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dogchow {
+  width: 199px;
+  height: 85px;
+}
+
+footer {
+  background-color: #FCC8D1;
+}
+
+.contacto1 {
+  font-size: 40px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.contacto2 {
+  font-size: 40px;
+  margin-left: 30px;
+}
+
+.contacto3 {
+  font-size: 40px;
+  text-align: right;
+  margin-right: 80px;
+  line-height: 10px;
+}
+
+.contacto5 {
+  font-size: 40px;
+  text-align: right;
+  margin-right: 80px;
+}
+
+.footer {
+  display: grid;
+  padding: 10px;
+  grid-template-areas: "h2" ".contacto4";
+}
+
+.contacto4 {
+  display: grid;
+  margin-top: 60px;
+  grid-template-areas: "contacto1 contacto2" "contacto5 contacto3";
+}
+
+.titulo__footer {
+  margin-top: 0px;
+}
+
+.contacto1, .contacto2, .contacto3, .contacto5 {
+  text-decoration: none;
+}
+
+.nosotros5 {
+  display: inline-flexbox;
+}
+
+p {
+  font-size: 30px;
+}
+
+.main {
+  display: grid;
+  margin: 10px;
+  grid-template-areas: "titulo__main" "ventas";
+}
+
+.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8 {
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  line-height: 30px;
+}
+
+.titulo__main {
+  margin-bottom: 40px;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+
+.venta1 {
+  display: flexbox;
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.ventas {
+  display: inline-flexbox;
+  flex-direction: row;
+  place-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .section__marcas, .producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8 {
     display: grid;
-    margin: 10px;
-    grid-template-areas:
-        "header2 header3";
-}
-
-.header3{
-    display: grid;
-    margin: 10px;
-    grid-template-areas:
-    "aside"
-    "nav";
-}
-
-.main{
-    display: grid;
-    margin: 10px;
-    grid-template-areas: 
-    "titulo__main"
-    "section__marcas";
-}
-
-.main{
-    display: grid;
-    margin: 10px;
-    grid-template-areas:
-    "titulo__main"
-    "ventas";
-}
-
-.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-    line-height: 30px;
-}
-
-.nosotros5{
-    display: inline-flexbox;
-}
-
-.section__marcas{
-    display: inline-block;
-}
-
-.purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.titulo__main{
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-top: 20px;
-}
-
-.footer{
-    display: grid;
-    margin: 10px;
-    grid-template-areas: 
-    "h2" 
-    ".contacto4";
-}
-
-.contacto4{
-    display: grid;
-    margin-top: 60px;
-    grid-template-areas:
-    "contacto1 contacto2"
-    "contacto5 contacto3";
-}
-
-.venta1{
-    display: flexbox;
-    width: auto;
-    height: auto;
-    position: relative;
-}
-
-.ventas{
-    display: inline-flexbox;
-    flex-direction: row;
     place-items: center;
+    grid-template-columns: 1;
+    gap: 0px;
+  }
+  header {
+    display: grid;
+    grid-column: 1;
+    height: auto;
+  }
+  .header {
+    height: 550px;
+  }
+  .container-fluid {
+    display: grid;
+    grid-template-areas: "bordes-redondeados" "navbar-brand" "collapse navbar-collapse" "navbar-toggler";
+  }
+  .contacto4 {
+    display: block;
+  }
+  .contacto1, .contacto2, .contacto3, .contacto5 {
+    margin-bottom: 60px;
+    justify-content: center;
+  }
+  .cont1, .cont2, .cont3, .cont4 {
+    justify-content: left;
+  }
 }
 
-.dogchow{
-    width: 199px;
-    height: 85px;
-}
-
-.titulo__principal:hover{
-    color: black;
-    font-size: 22px;
-}
-.inicio:hover, .perros:hover, .gatos:hover, .accesorios:hover, .nosotros:hover{
-    color: black;
-    font-size: 22px;
-}
-
-.contacto1, .contacto2, .contacto3, .contacto5{
-text-decoration: none;
-}
-
-.dropdown-item{
-    margin: 0;
-    padding: 0;
-}
-
-.bordes-redondeados{
-    margin-bottom: 10px;
-}
-
-.titulo__footer{
-    margin-top: 0px;
-}
-
-
-
-
-
-@media screen and (max-width: 480px){
-    .section__marcas, .producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
-        display: grid;
-        place-items: center;
-        grid-template-columns: 1;
-        gap: 50px;
-    }
-    header{
-        display: grid;
-        grid-column: 1;
-        height: auto;
-    }
-
-    .header{
-        height: 500px;
-    }
-}
-
-
-
-
-
-
-
-
-
- /* aplicarselo a hoja 3 con media querys para que quede en 1 sola columna centrado cuando este para mobile */
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,33 @@
+.main{
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+    "titulo__main"
+    "ventas";
+}
+
+.producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+}
+
+.titulo__main{
+    margin-bottom: 40px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.venta1{
+    display: flexbox;
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+.ventas{
+    display: inline-flexbox;
+    flex-direction: row;
+    place-items: center;
+}

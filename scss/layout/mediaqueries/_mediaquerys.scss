@@ -1,0 +1,34 @@
+@media screen and (max-width: 480px){
+    .section__marcas, .producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1;
+        gap: 0px;
+    }
+    header{
+        display: grid;
+        grid-column: 1;
+        height: auto;
+    }
+    .header{
+        height: 550px;
+    }
+    .container-fluid{
+        display: grid;
+        grid-template-areas:
+        "bordes-redondeados"
+        "navbar-brand"
+        "collapse navbar-collapse"
+        "navbar-toggler";
+    }
+    .contacto4{
+        display: block;
+    }
+    .contacto1, .contacto2, .contacto3, .contacto5{
+        margin-bottom: 60px;
+        justify-content: center;
+    }
+    .cont1, .cont2, .cont3, .cont4{
+        justify-content: left;
+    }
+}

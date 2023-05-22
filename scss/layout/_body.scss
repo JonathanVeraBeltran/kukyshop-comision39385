@@ -1,0 +1,19 @@
+
+body {
+    background-color: #FCC8D1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor {
+    width: 90%;
+    display: grid;
+    gap: 10px;
+    max-width: auto;
+    margin: 10px;
+    grid-template: auto auto auto/ repeat(1, 1fr);
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
