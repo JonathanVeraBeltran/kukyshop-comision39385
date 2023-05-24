@@ -6,7 +6,7 @@
 }
 
 header {
-  background-color: #FCC8D1;
+  background-image: linear-gradient(rgb(243, 139, 156), #FCC8D1);
   min-height: 300px;
 }
 
@@ -50,7 +50,7 @@ header {
 }
 
 main {
-  background-color: #FFE3E3;
+  background-image: linear-gradient(#FCC8D1, rgb(233, 214, 217) , #FCC8D1);
   justify-content: center;
   width: 100%;
 }
@@ -84,7 +84,7 @@ main {
 }
 
 footer {
-  background-color: #FCC8D1;
+  background-image: linear-gradient(#FCC8D1, rgb(243, 139, 156));
 }
 
 .contacto1 {
