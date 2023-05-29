@@ -1,5 +1,5 @@
 main {
-    background-color: #FFE3E3;
+    background: linear-gradient(#FCC8D1,#f5f5f5 ,#FCC8D1);
     justify-content: center;
     width: 100%;
 }
@@ -17,16 +17,12 @@ main {
 }
 
 .titulo__main{
-    margin-bottom: 40px;
-    margin-left: 40px;
-    margin-top: 20px;
+    @include margin(20px, 0px, 40px, 40px);
 }
 
+
 .purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    @include margin(10px, 10px, 10px, 10px);
 }
 
 .dogchow{

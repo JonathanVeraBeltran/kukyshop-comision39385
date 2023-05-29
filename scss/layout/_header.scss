@@ -1,5 +1,5 @@
 header {
-    background-color: #FCC8D1;
+    background: linear-gradient(#f17187, #FCC8D1);
     min-height: 300px;
 }
 
@@ -10,16 +10,7 @@ header {
     height: 150px;
     margin-top: 20px;
     margin-left: 20px;
-}
-
-.navbar-brand{
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.nav-link{
-    text-decoration: solid;
-    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 .header {
@@ -29,16 +20,3 @@ header {
         "header2 header3";
 }
 
-.nav-link:hover{
-    color: black;
-    font-size: 22px;
-}
-
-.dropdown-item{
-    margin: 0;
-    padding: 0;
-}
-
-.bordes-redondeados{
-    margin-bottom: 10px;
-}

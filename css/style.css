@@ -3,10 +3,11 @@
   padding: 0;
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
+  color: gray;
 }
 
 header {
-  background-image: linear-gradient(rgb(243, 139, 156), #FCC8D1);
+  background: linear-gradient(#f17187, #FCC8D1);
   min-height: 300px;
 }
 
@@ -17,16 +18,7 @@ header {
   height: 150px;
   margin-top: 20px;
   margin-left: 20px;
-}
-
-.navbar-brand {
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-.nav-link {
-  text-decoration: solid;
-  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .header {
@@ -45,12 +37,25 @@ header {
   padding: 0;
 }
 
-.bordes-redondeados {
-  margin-bottom: 10px;
+.navbar-brand {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+  font-size: 26px;
+  text-decoration: underline;
+}
+
+.nav-link {
+  text-decoration: solid;
+  letter-spacing: 1px;
 }
 
 main {
-  background-image: linear-gradient(#FCC8D1, rgb(233, 214, 217) , #FCC8D1);
+  background: linear-gradient(#FCC8D1, #f5f5f5, #FCC8D1);
   justify-content: center;
   width: 100%;
 }
@@ -66,16 +71,17 @@ main {
 }
 
 .titulo__main {
+  margin-top: 20px;
+  margin-right: 0px;
   margin-bottom: 40px;
   margin-left: 40px;
-  margin-top: 20px;
 }
 
 .purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow {
-  margin-left: 10px;
-  margin-right: 10px;
   margin-top: 10px;
+  margin-right: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
 }
 
 .dogchow {
@@ -84,31 +90,32 @@ main {
 }
 
 footer {
-  background-image: linear-gradient(#FCC8D1, rgb(243, 139, 156));
+  background: linear-gradient(#FCC8D1, #f17187);
 }
 
 .contacto1 {
   font-size: 40px;
-  margin-left: 30px;
-  margin-bottom: 40px;
+  text-align: none;
+  margin: 0px 0px 40px 30px;
 }
 
 .contacto2 {
   font-size: 40px;
-  margin-left: 30px;
+  text-align: none;
+  margin: 0px 0px 30px 30px;
 }
 
 .contacto3 {
   font-size: 40px;
   text-align: right;
-  margin-right: 80px;
+  margin: 0px 80px 30px 0px;
   line-height: 10px;
 }
 
 .contacto5 {
   font-size: 40px;
   text-align: right;
-  margin-right: 80px;
+  margin: 0px 80px 30px 0px;
 }
 
 .footer {
@@ -150,12 +157,6 @@ p {
   align-items: center;
   text-align: center;
   line-height: 30px;
-}
-
-.titulo__main {
-  margin-bottom: 40px;
-  margin-left: 40px;
-  margin-top: 20px;
 }
 
 .venta1 {
