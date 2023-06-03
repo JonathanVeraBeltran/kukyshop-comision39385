@@ -37,10 +37,17 @@ footer {
 }
 
 .titulo__footer{
-    margin-top: 0px;
+    margin:50px 0px 0px 45px;
 }
 
 .contacto1, .contacto2, .contacto3, .contacto5{
     text-decoration: none;
 }
 
+.contacto1:hover, .contacto2:hover, .contacto3:hover, .contacto5:hover{
+    transform: scale(1,1.5);
+}
+
+h2{
+    color: white;
+}

@@ -6,11 +6,11 @@ body {
 }
 
 .contenedor {
-    width: 90%;
+    width: 100%;
     display: grid;
-    gap: 10px;
+    gap: 0px;
     max-width: auto;
-    margin: 10px;
+    margin: 0px;
     grid-template: auto auto auto/ repeat(1, 1fr);
     grid-template-areas:
         "header"

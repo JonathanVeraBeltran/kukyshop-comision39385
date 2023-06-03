@@ -2,8 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: gray;
+  font-family: cursive;
 }
 
 header {
@@ -28,13 +27,22 @@ header {
 }
 
 .nav-link:hover {
-  color: black;
+  color: white;
   font-size: 22px;
+}
+
+.dropdown-item:hover {
+  font-size: 22px;
+  background-color: transparent;
+  color: white;
 }
 
 .dropdown-item {
   margin: 0;
   padding: 0;
+  font-family: cursive;
+  -webkit-text-stroke: 1px grey;
+  color: white;
 }
 
 .navbar-brand {
@@ -44,20 +52,37 @@ header {
 }
 
 .navbar-brand:hover {
-  color: white;
+  color: whitesmoke;
   font-size: 26px;
   text-decoration: underline;
+  transform: scale(1, 1.5);
 }
 
 .nav-link {
   text-decoration: solid;
   letter-spacing: 1px;
+  font-family: cursive;
+  -webkit-text-stroke: 1px grey;
+  color: white;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.navbar-brand {
+  -webkit-text-stroke: 1px grey;
+}
+
+.form-control {
+  -webkit-text-stroke: 1px grey;
 }
 
 main {
   background: linear-gradient(#FCC8D1, #f5f5f5, #FCC8D1);
   justify-content: center;
   width: 100%;
+  height: 800px;
 }
 
 .main {
@@ -65,28 +90,42 @@ main {
   padding: 10px;
   grid-template-areas: "titulo__main" "section__marcas";
 }
-
-.section__marcas {
-  display: inline-block;
-}
-
-.titulo__main {
+.main .titulo__main {
   margin-top: 20px;
   margin-right: 0px;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   margin-left: 40px;
 }
-
-.purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow {
+.main .section__marcas {
+  display: inline-block;
+  padding-left: 40px;
+}
+.main .section__marcas .purina, .main .section__marcas .royal__canin, .main .section__marcas .vittal__can, .main .section__marcas .pedigree, .main .section__marcas .whiskas, .main .section__marcas .eukanuba, .main .section__marcas .catchow, .main .section__marcas .dogchow {
   margin-top: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
   margin-left: 10px;
+  align-content: space-between;
+  margin-right: 100px;
+  margin-top: 60px;
+  height: auto;
 }
 
 .dogchow {
   width: 199px;
   height: 85px;
+}
+
+h2 {
+  -webkit-text-stroke: 2px grey;
+}
+
+h2:hover {
+  transform: scale(1, 1.5);
+}
+
+.purina:hover, .royal__canin:hover, .vittal__can:hover, .pedigree:hover, .whiskas:hover, .eukanuba:hover, .catchow:hover, .dogchow:hover {
+  transform: scale(1, 1.2);
 }
 
 footer {
@@ -131,24 +170,33 @@ footer {
 }
 
 .titulo__footer {
-  margin-top: 0px;
+  margin: 50px 0px 0px 45px;
 }
 
 .contacto1, .contacto2, .contacto3, .contacto5 {
   text-decoration: none;
 }
 
-.nosotros5 {
-  display: inline-flexbox;
+.contacto1:hover, .contacto2:hover, .contacto3:hover, .contacto5:hover {
+  transform: scale(1, 1.5);
 }
 
-p {
+h2 {
+  color: white;
+}
+
+.main .nosotros5 {
+  display: inline-flexbox;
+}
+.main .nosotros5 .texto__nosotros1, .main .nosotros5 .texto__nosotros2, .main .nosotros5 .texto__nosotros3 {
+  padding: 40px 50px 0px 50px;
+  color: black;
   font-size: 30px;
 }
 
-.main {
+.main, .main__accesorios, .main__perros, .main__gatos, .main__nosotros {
   display: grid;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   grid-template-areas: "titulo__main" "ventas";
 }
 
@@ -157,6 +205,8 @@ p {
   align-items: center;
   text-align: center;
   line-height: 30px;
+  margin-bottom: 100px;
+  margin-right: 50px;
 }
 
 .venta1 {
@@ -172,7 +222,121 @@ p {
   place-items: center;
 }
 
+.producto1:hover, .producto2:hover, .producto3:hover, .producto4:hover, .producto5:hover, .producto6:hover, .producto7:hover, .producto8:hover {
+  transform: scale(1, 1.2);
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    margin-left: 0px;
+  }
+  .main__nosotros {
+    max-height: 600px;
+  }
+  .texto__nosotros1, .texto__nosotros2, .texto__nosotros3 {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 960px) {
+  main {
+    height: 1000px;
+  }
+  .main__perros {
+    min-height: 1100px;
+  }
+  .main__nosotros {
+    min-height: 600px;
+  }
+  .texto__nosotros1, .texto__nosotros2, .texto__nosotros3 {
+    padding-top: 60px;
+  }
+  .main__accesorios {
+    min-height: 1200px;
+  }
+  .main__accesorios .titulo__main__accesorios {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main__gatos {
+    min-height: 1300px;
+  }
+  .main__gatos .titulo__main {
+    text-align: center;
+    padding-top: 30px;
+  }
+  .main__accesorios {
+    max-height: 1200px;
+  }
+  .main__accesorios .titulo__main__accesorios {
+    text-align: center;
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 710px) {
+  .main__accesorios {
+    min-height: 1600px;
+  }
+  .main__accesorios .titulo__main__accesorios {
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 680px) {
+  .header {
+    min-height: 580px;
+  }
+  main {
+    min-height: 1500px;
+  }
+  .main {
+    margin-left: 0px;
+  }
+  .contacto1, .contacto2, .contacto3, .contacto5 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .ventas {
+    display: grid;
+    grid-column: 50% 50%;
+    grid-template-areas: "producto1 producto2" "producto3 prodcuto4" "producto5 producto6" "producto7 producto8";
+  }
+  .main__perros {
+    height: 1800px;
+  }
+  .main__nosotros {
+    max-height: 650px;
+  }
+  .texto__nosotros1, .texto__nosotros2, .texto__nosotros3 {
+    padding-top: 60px;
+  }
+  .main__gatos {
+    min-height: 1700px;
+  }
+}
+@media screen and (max-width: 510px) {
+  .main__accesorios {
+    min-height: 3100px;
+  }
+  .ventas__accesorios {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-areas: "producto1" "prodcuto2" "producto3" "producto4" "producto5" "producto6" "producto7" "producto8";
+  }
+}
 @media screen and (max-width: 480px) {
+  .contenedor {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .section__marcas, .producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8 {
     display: grid;
     place-items: center;
@@ -200,6 +364,68 @@ p {
   }
   .cont1, .cont2, .cont3, .cont4 {
     justify-content: left;
+  }
+  main {
+    min-height: 2000px;
+  }
+  .main {
+    margin-left: 0px;
+  }
+  .ventas {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-areas: "producto1" "prodcuto2" "producto3" "producto4" "producto5" "producto6" "producto7" "producto8";
+  }
+  .main__perros {
+    display: grid;
+    grid-template-areas: "titulo__main" "ventas";
+    gap: 0px;
+    grid-template-rows: 5% 95%;
+    height: 3100px;
+  }
+  .main__perros .producto1, .main__perros .producto2, .main__perros .producto3, .main__perros .producto4, .main__perros .producto5, .main__perros .producto6, .main__perros .producto7, .main__perros .producto8 {
+    margin: 15px 50px 15px 50px;
+    gap: 0px;
+  }
+  .titulo__main {
+    height: 50px;
+    text-align: center;
+    padding-top: 35px;
+  }
+  .main__nosotros {
+    max-height: 820px;
+  }
+  .texto__nosotros1, .texto__nosotros2, .texto__nosotros3 {
+    padding-top: 60px;
+  }
+  .main__gatos {
+    min-height: 3200px;
+  }
+  .main__accesorios {
+    min-height: 3100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+  }
+  .header {
+    min-height: 580px;
+  }
+  .main {
+    margin-left: 0px;
+  }
+  .main__perros, .main__gatos, .main__accesorios {
+    height: 3100px;
+  }
+  .titulo__main h2 {
+    justify-content: center;
+  }
+  .main__nosotros {
+    min-height: 600px;
+  }
+  .texto__nosotros1, .texto__nosotros2, .texto__nosotros3 {
+    padding-top: 40px;
   }
 }
 

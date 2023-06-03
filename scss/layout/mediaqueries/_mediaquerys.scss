@@ -1,4 +1,137 @@
+
+
+
+
+
+@media screen and (max-width: 1024px){
+    .main{
+        margin-left: 0px;
+    }
+    .main__nosotros{
+        max-height: 600px;
+    }
+    .texto__nosotros1, .texto__nosotros2, .texto__nosotros3{
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    main{
+        height: 1000px;
+    }
+    .main__perros{
+        min-height: 1100px;
+    }
+    .main__nosotros{
+        min-height: 600px;
+    }
+    .texto__nosotros1, .texto__nosotros2, .texto__nosotros3{
+        padding-top: 60px;
+    }
+    .main__accesorios{
+        min-height: 1200px;
+        .titulo__main__accesorios{
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .main__gatos{
+        min-height: 1300px;
+        .titulo__main{
+            text-align: center;
+            padding-top: 30px;
+        }
+    }
+    .main__accesorios{
+        max-height: 1200px;
+        .titulo__main__accesorios{
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 710px){
+    .main__accesorios{
+        min-height: 1600px;
+        .titulo__main__accesorios{
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .header{
+        min-height: 580px;
+    }
+    main{
+        min-height: 1500px;
+    }
+    .main{
+        margin-left: 0px;
+    }
+    .contacto1, .contacto2, .contacto3, .contacto5{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+    .ventas{
+        display: grid;
+        grid-column: 50% 50%;
+        grid-template-areas: 
+        "producto1 producto2"
+        "producto3 prodcuto4"
+        "producto5 producto6"
+        "producto7 producto8";
+    }
+    .main__perros{
+        height: 1800px;
+    }
+    .main__nosotros{
+        max-height: 650px;
+    }
+    .texto__nosotros1, .texto__nosotros2, .texto__nosotros3{
+        padding-top: 60px;
+    }
+    .main__gatos{
+        min-height: 1700px;
+    }
+}
+
+@media screen and (max-width: 510px){
+    .main__accesorios{
+        min-height: 3100px;
+    }
+    .ventas__accesorios{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-areas: 
+        "producto1"
+        "prodcuto2"
+        "producto3"
+        "producto4"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8";
+    }
+}
+
 @media screen and (max-width: 480px){
+    .contenedor{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
     .section__marcas, .producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
         display: grid;
         place-items: center;
@@ -30,5 +163,79 @@
     }
     .cont1, .cont2, .cont3, .cont4{
         justify-content: left;
+    }
+    main{
+        min-height: 2000px;
+    }
+    .main{
+        margin-left: 0px;
+    }
+    .ventas{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-areas: 
+        "producto1"
+        "prodcuto2"
+        "producto3"
+        "producto4"
+        "producto5"
+        "producto6"
+        "producto7"
+        "producto8";
+    }
+    .main__perros{
+        display: grid;
+        grid-template-areas:
+        "titulo__main"
+        "ventas";
+        gap: 0px;
+        grid-template-rows: 5% 95%;
+        height: 3100px;
+        .producto1, .producto2, .producto3, .producto4, .producto5, .producto6, .producto7, .producto8{
+            margin: 15px 50px 15px 50px;
+            gap: 0px;
+        }
+    }
+    .titulo__main{
+        height: 50px;
+        text-align: center;
+        padding-top: 35px;
+    }
+    .main__nosotros{
+        max-height: 820px;
+    }
+    .texto__nosotros1, .texto__nosotros2, .texto__nosotros3{
+        padding-top: 60px;
+    }
+    .main__gatos{
+        min-height: 3200px;
+    }
+    .main__accesorios{
+        min-height: 3100px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body{
+        width: 100%;
+    }
+    .header{
+        min-height: 580px;
+    }
+    .main{
+        margin-left: 0px;
+    }
+    .main__perros, .main__gatos, .main__accesorios{
+        height: 3100px;
+    }
+    .titulo__main{
+        h2{
+            justify-content: center;
+        }}
+    .main__nosotros{
+        min-height: 600px;
+    }
+    .texto__nosotros1, .texto__nosotros2, .texto__nosotros3{
+        padding-top: 40px;
     }
 }

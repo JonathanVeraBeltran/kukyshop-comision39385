@@ -1,11 +1,20 @@
 .nav-link:hover{
-    color: black;
+    color: white;
     font-size: 22px;
+}
+
+.dropdown-item:hover{
+    font-size: 22px;
+    background-color: transparent;
+    color: white;
 }
 
 .dropdown-item{
     margin: 0;
     padding: 0;
+    font-family: cursive;
+    -webkit-text-stroke: 1px grey;
+    color: white;
 }
 
 .navbar-brand{
@@ -15,12 +24,29 @@
 }
 
 .navbar-brand:hover{
-    color: white;
+    color: whitesmoke;
     font-size: 26px;
     text-decoration: underline;
+    transform: scale(1,1.5);
 }
 
 .nav-link{
     text-decoration: solid;
     letter-spacing: 1px;
+    font-family: cursive;
+    -webkit-text-stroke: 1px grey;
+    color: white;
 }
+
+.nav-link:hover{
+    color: white;
+}
+
+.navbar-brand{
+    -webkit-text-stroke: 1px grey;
+}
+
+.form-control{
+    -webkit-text-stroke: 1px grey;
+}
+

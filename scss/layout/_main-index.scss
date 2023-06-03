@@ -2,6 +2,7 @@ main {
     background: linear-gradient(#FCC8D1,#f5f5f5 ,#FCC8D1);
     justify-content: center;
     width: 100%;
+    height: 800px;
 }
 
 .main{
@@ -10,22 +11,34 @@ main {
     grid-template-areas: 
     "titulo__main"
     "section__marcas";
-}
-
-.section__marcas{
+    .titulo__main{
+        @include margin(20px, 0px, 0px, 40px);}
+    .section__marcas{
     display: inline-block;
-}
-
-.titulo__main{
-    @include margin(20px, 0px, 40px, 40px);
-}
-
-
-.purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow{
-    @include margin(10px, 10px, 10px, 10px);
-}
+    padding-left: 40px;
+    .purina, .royal__canin, .vittal__can, .pedigree, .whiskas, .eukanuba, .catchow, .dogchow{
+        @include margin(10px, 10px, 10px, 10px);
+        align-content: space-between;
+        margin-right: 100px;
+        margin-top: 60px;
+        height: auto;
+}}}
 
 .dogchow{
     width: 199px;
     height: 85px;
 }
+
+h2{
+    -webkit-text-stroke: 2px grey;
+}
+
+h2:hover{
+    transform: scale(1,1.5);
+}
+
+.purina:hover, .royal__canin:hover, .vittal__can:hover, .pedigree:hover, .whiskas:hover, .eukanuba:hover, .catchow:hover, .dogchow:hover{
+    transform: scale(1,1.2);
+}
+
+

@@ -1,6 +1,6 @@
-.main{
+.main, .main__accesorios, .main__perros, .main__gatos, .main__nosotros{
     display: grid;
-    margin: 10px;
+    margin: 10px 0px 10px 0px;
     grid-template-areas:
     "titulo__main"
     "ventas";
@@ -11,6 +11,8 @@
     align-items: center;
     text-align: center;
     line-height: 30px;
+    margin-bottom: 100px;
+    margin-right: 50px;
 }
 
 .venta1{
@@ -24,4 +26,8 @@
     display: inline-flexbox;
     flex-direction: row;
     place-items: center;
+}
+
+.producto1:hover, .producto2:hover, .producto3:hover, .producto4:hover, .producto5:hover, .producto6:hover, .producto7:hover, .producto8:hover{
+    transform: scale(1,1.2);
 }

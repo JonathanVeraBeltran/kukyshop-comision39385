@@ -1,7 +1,10 @@
-.nosotros5{
-    display: inline-flexbox;
-}
-
-p{
-    font-size: 30px;
+.main{
+    .nosotros5{
+        display: inline-flexbox;
+        .texto__nosotros1, .texto__nosotros2, .texto__nosotros3{
+            padding: 40px 50px 0px 50px;
+            color: black;
+            font-size: 30px;
+        }
+    }
 }
